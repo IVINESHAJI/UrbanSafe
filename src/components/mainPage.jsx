@@ -21,7 +21,7 @@ function MainPage() {
                     <button
   style={{
     top: '36em',
-    left: '80em',
+    left: '70%',
     position: 'absolute',
     textDecoration: 'none',
     color: 'black',
