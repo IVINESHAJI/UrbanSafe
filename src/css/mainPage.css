@@ -1,0 +1,66 @@
+
+.pattern-collage {
+    margin: 0;
+    position: relative;
+    
+    height: auto;
+}
+
+.pattern-collage img {
+    position: absolute;
+    width: auto;
+    opacity: 0;
+    animation: slide-in 0.5s forwards;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.pattern-collage img:nth-child(1) {
+    height: 20em;
+    top: 0;
+    left: 0;
+    animation-delay: 0.1s;
+}
+
+.pattern-collage img:nth-child(2) {
+    height: 22em;
+    top: 0;
+    left: 25em;
+    animation-delay: 0.2s;
+}
+
+.pattern-collage img:nth-child(3) {
+    height: 18.55em;
+    top: 22em;
+    left: 24em;
+    animation-delay: 0.3s;
+}
+
+.pattern-collage img:nth-child(4) {
+    height: 20.54em;
+    top: 20em;
+    left: 0em;
+    width: 25em;
+    animation-delay: 0.4s;
+}
+
+.quote {
+    position: absolute;
+    color: black;
+    font-family: "Playfair Display SC", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3vw;
+    top: 4em;
+    left: 20em;
+}
