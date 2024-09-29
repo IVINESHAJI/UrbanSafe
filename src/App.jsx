@@ -5,10 +5,13 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Error from './components/Error'
 import Report from './components/Report';
 import Developer from './components/developer';
+import Overlay from './components/overlay';
 
 function App() {
 
   return (
+    <>
+    <Overlay />
     <Router>
       <NavBar />
       <Routes>
@@ -18,6 +21,7 @@ function App() {
         <Route path="/developers_page" element={<Developer/>}/>
       </Routes>
     </Router>
+    </>
   )
 }
 
