@@ -17,6 +17,44 @@ function MainPage() {
                         <img src={Build5} alt="Building 4" />
                         <p className='quote'>Building safer<br/> communities for a<br/> brighter tomorrow.</p>
                     </div>
+
+                    <button
+  style={{
+    top: '36em',
+    left: '80em',
+    position: 'absolute',
+    textDecoration: 'none',
+    color: 'black',
+    width: '15em',
+    height: '4em',
+    backgroundColor: 'rgb(249, 142, 251)',
+    border: 'none',
+    borderRadius: '5px',
+    
+    transition: 'box-shadow 0.3s ease',
+  }}
+  onMouseEnter={(e) => {
+    e.target.style.boxShadow = '0 0 1.5em 0.5em rgba(249, 142, 251, 0.75)';
+    e.target.style.cursor = 'pointer';
+  }}
+  onMouseLeave={(e) => {
+    e.target.style.boxShadow = 'none';
+  }}
+>
+  <a
+    href="/crime"
+    style={{
+      fontSize: '18px',
+      textDecoration: 'none',
+      fontFamily: 'Playfair Display SC',
+      color: 'white',
+      fontWeight: '700',
+    }}
+  >
+    Crime Analysis
+  </a>
+</button>
+
                 </section>
                 <section>
                     <div style={{ 
